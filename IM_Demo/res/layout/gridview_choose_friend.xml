@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_choose_friend_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择您希望可以看到此条心情分享的亲人"
+        android:gravity="center"/>
+    <GridView 
+        android:id="@+id/choose_friend_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1pt"
+        android:verticalSpacing="1pt"
+        android:numColumns="4"
+        android:gravity="center"
+        />
+</LinearLayout>

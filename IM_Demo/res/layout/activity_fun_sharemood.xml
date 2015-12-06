@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.bmob.im.demo.view.xlist.XListView
+        android:id="@+id/sharemood_xlist_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#aaa"
+        android:dividerHeight="2dp" 
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="true"
+        android:listSelector="@color/transparent"
+        android:paddingBottom="10dp"
+        android:transcriptMode="normal"/>
+
+    <Button
+        android:id="@+id/sharemood_btn_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布心情"/>
+    
+
+
+</LinearLayout>

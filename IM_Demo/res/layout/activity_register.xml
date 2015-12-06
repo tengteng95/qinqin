@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+ 
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号" />
+        
+        <EditText android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/activity_register_username"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的手机号"/>
+        
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_register_getCheckCode"
+            android:text="获取验证码"/>
+
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证码" />
+        
+        <EditText android:layout_width="match_parent"
+        android:id="@+id/activity_register_checkcode"
+        android:layout_height="wrap_content"
+        android:hint="请输入您收到的验证码"/>
+
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" />
+        
+        <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_register_password"
+        android:hint="请输入您的密码"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码" />
+        
+        <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_register_password2"
+        android:hint="请再次输入密码确认"/>
+
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="性别" />
+        <RadioGroup android:gravity="center_horizontal"
+            android:id="@+id/activity_register_sex_group"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <RadioButton android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_register_sex_male"
+                android:text="男"
+                android:checked="true"/>
+            <RadioButton android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_register_sex_female"
+                android:text="女"/>
+        </RadioGroup>
+     </LinearLayout>
+       
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_horizontal"
+        android:id="@+id/activity_register_button_ok"
+        android:text="确认"/>
+    </RelativeLayout>
+    
+</LinearLayout>

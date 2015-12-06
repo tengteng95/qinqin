@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/fun_sharemood_new_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left|top"
+        android:hint="内容" />
+
+    <include
+        layout="@layout/gridview_choose_friend"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/fun_sharemood_rlayout_whosee"
+        android:background="@color/base_color_text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="谁能看见" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:id="@+id/fun_sharemood_img_whosee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat_send_n"
+            />
+        
+        <TextView
+            android:id="@+id/fun_sharemood_tv_whosee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fun_sharemood_img_whosee"
+            android:textSize="20sp"
+            android:text="所有人可见" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fun_sharemood_new_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/item_note_llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/item_note_btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成" 
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/item_note_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="删除" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_note_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_note_llayout"
+        android:layout_alignParentLeft="true"
+        android:text="aa" />
+
+</RelativeLayout>
